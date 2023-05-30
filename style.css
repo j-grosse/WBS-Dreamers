@@ -1,5 +1,98 @@
-*{
-    padding: 0;
-    margin: 0;
-    
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  --bg: lightgrey;
+  --border: 1px solid grey;
+}
+
+html body {
+  /* width: 100vw; */
+  height: 100%;
+  margin: 2rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  border: var(--border);
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+li {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.rubberduck {
+  background: var(--bg);
+  display: flex;
+  justify-content: space-around;
+}
+
+.rubberduck-left {
+  border: var(--border);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.rubberduck-left > p {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.rubberduck-button {
+  border-radius: 5px;
+  width: 40px;
+}
+
+.rubberduck-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emergency {
+  background: var(--bg);
+}
+
+.emergency-grid {
+  display: grid;
+  grid-template: 25fr 25fr 25fr;
+  grid-row: auto;
+}
+
+.contact {
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
 }
