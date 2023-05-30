@@ -17,6 +17,11 @@ body {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav {
   background: white;
   display: flex;
@@ -29,15 +34,11 @@ nav ul {
   justify-content: space-between;
   list-style: none;
 }
-li {
+
+nav li {
   display: flex;
   justify-content: flex-end;
   margin-right: 1rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: inherit;
 }
 
 header {
@@ -51,48 +52,56 @@ header {
   flex-direction: column;
 }
 
-.rubberduck {
+.duck {
   background: var(--bg);
   display: flex;
   justify-content: space-around;
 }
 
-.rubberduck-left {
-  border: var(--border);
-
+#duck .text {
   display: flex;
   flex-direction: column;
-}
-
-.rubberduck-left > p {
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
 }
 
-.rubberduck-button {
-  border-radius: 5px;
-  width: 40px;
+#duck .button {
+  margin: 8px;
+  padding: 6px;
 }
 
-.rubberduck-right {
+#duck .image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.emergency {
+#duck img {
+  width: 5rem;
+}
+
+#emergency {
   background: var(--bg);
 }
 
-.emergency-grid {
+.grid-container {
   display: grid;
-  grid-template: 25fr 25fr 25fr;
-  grid-row: auto;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px 30px;
 }
 
-.contact {
+#contact {
   background: var(--bg);
   display: flex;
   flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 5px;
 }
