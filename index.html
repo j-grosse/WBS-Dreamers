@@ -10,24 +10,17 @@
 </head>
 
 <body>
-
+  <!--  -->
   <nav>
     <div class="nav-left">
-      <img class="logo" src="" alt="Logo with cat">
+      <img class="logo" src="" alt="Logo / Name">
     </div>
     <div class="nav-right">
       <ul>
-        <a href="#home">
-          <li>Home</li>
-        </a>
-        <a href="#duck">
-          <li>Talk to the duck</li>
-        </a>
-        <a href="#emergency">
-          <li>Emergency Kit</li>
-        </a>
-        <a href="#contact">
-          <li>Contact</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#duck">Talk to the duck</a></li>
+        <li><a href="#emergency">Emergency Kit</a></li>
+        <li><a href="#contact"> Contact</a></li>
         </a>
       </ul>
     </div>
@@ -42,32 +35,30 @@
         </h1>
         <br>
         <p>introduction text...</p>
-        <p>..and hello you! This is your first ever coding project.</p>
+        <p>.........</p>
       </div>
     </header>
-    <br>
 
-    <section id="duck">
-      <div class="text">
-        <p>Text about this page
-          <br>
-          and PS
-        </p>
-        <a href="#"></a><button class="button">Button</button></a>
+    <section class="duck-container" id="duck">
+      <div class="duck-left">
+        <div class="duck-text">
+          <p>Text about this page
+            <br>
+            and PS: Rubber Duck Debugging
+          </p>
+        </div>
+
+        <button class="button-duck"><a href="link" target="_blank" rel="noopener">Button</a></button>
       </div>
-
-      <div class="image">
-        <a href="https://lilalu-shop.com/media/image/35/9c/a5/lilalu-quietscheente-gelb-yellow-rubber-duck-HL.png"><img
-            src="https://lilalu-shop.com/media/image/35/9c/a5/lilalu-quietscheente-gelb-yellow-rubber-duck-HL.png"
-            alt="rubberduck">
-        </a>
+      <div class="duck-right">
+        <img src="https://lilalu-shop.com/media/image/35/9c/a5/lilalu-quietscheente-gelb-yellow-rubber-duck-HL.png"
+          alt="rubberduck">
       </div>
     </section>
-    <br>
 
-    <section id="emergency">
+    <section class="emergency-container" id="emergency">
       <h2>In case of Emergency click on:</h2>
-      <div class="grid-container">
+      <div class="grid-item-container">
         <a href="https://discordapp.com/channels/641221910146842644/641593560394760200">
           <div class="grid-item">Discord</div>
         </a>
@@ -92,19 +83,16 @@
 
   </main>
 
-  <footer id="contact">
-    <h2>Contact us</h2>
+  <footer class="contact-container" id="contact">
 
     <form action="submit">Contact us
       <input type="text" />
       <textarea cols="30" rows="10"></textarea>
-      <input type="submit">
+      <input class="submit" type="submit">
 
       <div>Proudly created by <em>Jay</em></div>
+    </form>
   </footer>
-  </form>
-  </footer>
-
 
 </body>
 
