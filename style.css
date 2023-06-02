@@ -1,9 +1,9 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  --bg: lightgrey;
-  --border: 1px solid grey;
+  box-sizing: border-box; /* css reset */
+  padding: 0; /* css reset */
+  margin: 0; /* css reset */
+  --bg: #E8AA42;
+  --border: 2px solid grey;
 }
 
 html {
@@ -11,14 +11,15 @@ html {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: #025464;
 }
 
 body {
-  margin: 0 20rem;
+  margin: 0 20%;
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(227, 227, 227);
+  color: #25474e;
 }
 
 a {
@@ -26,12 +27,16 @@ a {
   color: inherit;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav {
-  background: white;
+  background: #E57C23;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  margin-bottom: 1rem;
 }
 
 nav ul {
@@ -44,6 +49,10 @@ nav li {
   display: flex;
   justify-content: flex-end;
   margin-right: 3rem;
+}
+
+.border {
+  border: var(--border);
 }
 
 .header {
@@ -60,7 +69,7 @@ nav li {
   display: flex;
   justify-content: space-around;
   padding: 4rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .duck-left {
@@ -122,14 +131,12 @@ nav li {
   --border: 1px solid grey;
 }
 
-
-
-
 .contact-container {
   background: var(--bg);
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 2rem;
 }
 
 form {
